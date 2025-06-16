@@ -37,7 +37,6 @@ const LocalSearch = ({ route, imgSrc, placeholder, otherClasses }: Props) => {
           const newUrl = removeKeysFromQuery({
             params: searchParams.toString(),
             keysToRemove: ["query"],
-            value: searchQuery,
           });
 
           router.push(newUrl, { scroll: false });
