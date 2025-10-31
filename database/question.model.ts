@@ -12,6 +12,7 @@ export interface IQuestion {
   views: number;
 }
 
+export type IQuestionDoc = IQuestion & Document;
 const QuestionSchema = new Schema<IQuestion>({
   title: { type: String, required: true },
   content: { type: String, required: true },

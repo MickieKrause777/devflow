@@ -1,4 +1,4 @@
-import { model, models, Schema, Types } from "mongoose";
+import { Document, model, models, Schema, Types } from "mongoose";
 
 export interface IAnswer {
   content: string;
@@ -9,6 +9,7 @@ export interface IAnswer {
   downvotes: number;
 }
 
+export type IAnswerDoc = IAnswer & Document;
 const AnswerSchema = new Schema<IAnswer>(
   {
     content: { type: String, required: true },
