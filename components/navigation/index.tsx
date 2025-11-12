@@ -9,7 +9,6 @@ import UserAvatar from "@/components/UserAvatar";
 
 const Navbar = async () => {
   const session = await auth();
-  const userId = session?.user?.id;
 
   return (
     <nav className="flex-between background-light900_dark200 fixed z-50 w-full gap-5 p-6 dark:shadow-none sm:px-12 shadow-light-300">
