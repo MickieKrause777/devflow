@@ -3,7 +3,6 @@ import React from "react";
 
 import { auth } from "@/auth";
 import QuestionForm from "@/components/forms/QuestionForm";
-import { RouteParams } from "@/types/global";
 
 const AskAQuestion = async () => {
   const session = await auth();
