@@ -16,7 +16,9 @@ export const getDevIconClassName = (techName: string) => {
 };
 
 export const getTimeStamp = (createdAt: Date) => {
+  console.log(createdAt);
   const date = new Date(createdAt);
+  console.log(date);
   const now = new Date();
   const secondsAgo = Math.floor((now.getTime() - date.getTime()) / 1000);
 

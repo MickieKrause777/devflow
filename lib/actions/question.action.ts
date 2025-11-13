@@ -142,7 +142,7 @@ export const editQuestion = async (
     const newTagDocuments = [];
 
     if (tagsToAdd.length > 0) {
-      for (const tag of tags) {
+      for (const tag of tagsToAdd) {
         const existingTag = await Tag.findOneAndUpdate(
           {
             name: { $regex: `^${tag}`, $options: "i" },
@@ -162,7 +162,7 @@ export const editQuestion = async (
       }
     }
 
-    if (tagsToRemove > 0) {
+    if (tagsToRemove.length > 0) {
       const tagIdsToRemove = tagsToRemove.map((tag: ITagDoc) => tag._id);
 
       await Tag.updateMany(
