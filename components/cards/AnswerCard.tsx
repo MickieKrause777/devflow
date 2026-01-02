@@ -4,7 +4,6 @@ import React from "react";
 import { Preview } from "@/components/editor/Preview";
 import UserAvatar from "@/components/UserAvatar";
 import ROUTES from "@/constants/route";
-import { createAnswer } from "@/lib/actions/answer.action";
 import { getTimeStamp } from "@/lib/utils";
 import { Answer } from "@/types/global";
 
