@@ -15,6 +15,12 @@ import {
   PaginatedSearchParamsSchema,
 } from "@/lib/validations";
 import {
+  CreateQuestionParams,
+  EditQuestionParams,
+  GetQuestionParams,
+  IncrementViewsParams,
+} from "@/types/actions";
+import {
   ActionResponse,
   ErrorResponse,
   PaginatedSearchParams,
