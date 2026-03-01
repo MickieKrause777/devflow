@@ -8,6 +8,7 @@ import {
   GetTagQuestionsSchema,
   PaginatedSearchParamsSchema,
 } from "@/lib/validations";
+import { GetTagQuestionsParams } from "@/types/actions";
 import {
   ActionResponse,
   ErrorResponse,
